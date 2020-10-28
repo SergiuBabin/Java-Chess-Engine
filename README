@@ -1,0 +1,64 @@
+			--Proiect Proiectarea Algoritmilor--
+Etapa I
+*
+
+*Structura proiectului : Proiectul este elaborat in java ,s-a facut o ierarhie de clase;
+	Board-ul este creat in clasa Main fiind o matrice de tip piesa.
+		Piesa este o clasa abstracta cu un parametru de tip enum culoare avand cateva 
+		metode: canMove(verifica daca miscarea primita este valida),posibleMoves(returneaza
+		miscarile posibile a unei piese),getType(return tipul piesei),si un toString(
+		folosit la debug);Clase numite ca tipurile de piese in chess extind tipul clasa piece, 
+		in viitor vor fi elaborate si miscarile pentru fiecare piesa,pentru prima etapa fiind
+		necesar sa facem doar pentru o piesa( a fost facut pentru Pawn). In clasa Main, au fost
+		implementate comenzile necesare, "cerute" de enunt , pornind cu un while care asteapta 
+		intrare de la xboard , se initializeaza matricea(board-ul insusi), urmand sa primeasca 
+		urmatoarele comenzi,fiecare comanda executa exact ce spune documentatia xboard-ului.
+	
+
+*Deocamdata nu s-au folosit algoritmi.
+
+
+*Surse de inspiratie: A fost folosita documentatia xboard-ului pentru implementarea comenzile.
+
+
+*Sergiu Babin si Caraman Ghenadie s-au ocupat de implementarea,crearea pieselor,board-ului in sine
+,Mistodinis Robert de comenzile primite de la xboard.
+
+
+Etapa II
+*
+Timp de rezolvare: 3 zile 24/24. 
+
+Probleme intampinate: Mult timp am stat pe cautarea unei solutii cat mai eficiente,
+	apoi am avut probleme cu formarea arborelui din algoritmul "Minimax Alpha Beta"
+	(nu calculam bine arborele pentru adancime >= 2)
+
+*Pentru aceasta etapa a fost nevoie sa inplementam miscarile posibile pentru toate piesele
+de pe board, astfel pentru fiecare piesa am facut cate o functie care gaseste toate miscarile
+posibile si le intoarce sub forma de "ArrayList<String>".
+
+A fost nevoie sa implementam si mutarile speciale cum ar fi Rocada, En passant si Promovare.
+
+Dupa ce avem toate mutarile posibile in "ArrayList<String>" acum trebuie sa facem un algoritm
+cu care vom alege miscarea cea mai buna pentru acel moment de timp.
+
+Algoritmul folosit a fost minimax Alpha Beta, care ne ajuta sa facem alegerea corecta a mutarii,
+cu o adancime cat mai mare, datorita variantei minimax Alpha Beta nu mai mergem pe ramurile
+nefavorabile si verificam un numar mai mic de mutari.
+Pentru minimax Alpha Beta avem nevoie de o functie de evaluare a miscarilor, astfel pentru 
+fiecare miscare am evaluat board-ul folosind "Simplified Evaluation Function".
+
+Am mai facut o functie "kingIsAttacked()" care verifica la fiecare parcurgere a miscarilor din
+"minimax alpha beta" daca dupa ce facem o miscare regele nostru este atacat, in caz afirmativ,
+nu mai facem miscarea respectiva.
+
+
+*Surse de inspiratie: https://www.chessprogramming.org/Simplified_Evaluation_Function 
+					  Am folosit tehnica de evaluare a board-ului 
+					  "Simplified Evaluation Function"
+					  de "Tomasz Michniewski"
+
+*Sergiu Babin si Ghenadie Caraman s-au ocupat de implementarea miscarilor pentru fiecare piesa
+ din joc si implementarea algorutmului "Minimax Alpha Beta" cu tot cu evaluarea bordului.
+ Mistodinis Robert s-a ocupat de mutarile speciale "En passant", "Promovare", "Rocada" si
+ de functiile "kingIsAttacked" si "isAttacked".
