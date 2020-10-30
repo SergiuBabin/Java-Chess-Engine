@@ -5,16 +5,16 @@ JC = javac
 	$(JC) $(JFLAGS) $*.java
 	
 CLASSES = \
-	ROOK.java\
-	BISHOP.java\
-	KNIGHT.java\
-	KING.java\
-	QUEEN.java\
-        PAWN.java \
-        Piece.java \
-        Board.java \
-	Move.java\
-        Main.java 
+	Engine/ROOK.java\
+	Engine/BISHOP.java\
+	Engine/KNIGHT.java\
+	Engine/KING.java\
+	Engine/QUEEN.java\
+        Engine/PAWN.java \
+        Engine/Piece.java \
+        Engine/Board.java \
+	Engine/Move.java\
+        Engine/Main.java 
 
 default: classes
 
