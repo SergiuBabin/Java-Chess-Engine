@@ -33,6 +33,6 @@ If you wanna watch the game between Engine(my) and Fairy_Max5.0("Xboard Engine")
 ### About the project.
 I worked on this project for less than week
 
-##### Board
   The board is like an 8 * 8 matrix, each piece is a separate object
-  In start of the game all peices 
+  In start of the game all pieces are each in their place like in Xboard, when Engine receives a command from Xbord it procesing and return the answer.
+  The algorithm that I used is ``Minimax Alpha Beta`` and ``Simplified Evaluation Function`` that calculate the maximum favorable move for Engine
