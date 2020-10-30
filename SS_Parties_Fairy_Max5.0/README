@@ -14,15 +14,10 @@ Etapa I
 		intrare de la xboard , se initializeaza matricea(board-ul insusi), urmand sa primeasca 
 		urmatoarele comenzi,fiecare comanda executa exact ce spune documentatia xboard-ului.
 	
-
 *Deocamdata nu s-au folosit algoritmi.
 
 
-*Surse de inspiratie: A fost folosita documentatia xboard-ului pentru implementarea comenzile.
-
-
-*Sergiu Babin si Caraman Ghenadie s-au ocupat de implementarea,crearea pieselor,board-ului in sine
-,Mistodinis Robert de comenzile primite de la xboard.
+*Surse de inspiratie: A fost folosita documentatia xboard-ului pentru implementarea comenzilor.
 
 
 Etapa II
@@ -57,8 +52,3 @@ nu mai facem miscarea respectiva.
 					  Am folosit tehnica de evaluare a board-ului 
 					  "Simplified Evaluation Function"
 					  de "Tomasz Michniewski"
-
-*Sergiu Babin si Ghenadie Caraman s-au ocupat de implementarea miscarilor pentru fiecare piesa
- din joc si implementarea algorutmului "Minimax Alpha Beta" cu tot cu evaluarea bordului.
- Mistodinis Robert s-a ocupat de mutarile speciale "En passant", "Promovare", "Rocada" si
- de functiile "kingIsAttacked" si "isAttacked".
