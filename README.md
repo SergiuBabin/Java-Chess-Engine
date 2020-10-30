@@ -24,4 +24,6 @@ For run this engine you need download Xboard 4.8 or newer
 Linux
    
     sudo apt-get install xboard
-          
+If you wanna play with my Engine, you have to write in the terminal.  
+    
+    xboard -fcp "make run"
