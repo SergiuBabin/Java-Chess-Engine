@@ -30,3 +30,9 @@ If you wanna play with my Engine, you have to write in the terminal.
 If you wanna watch the game between Engine(my) and Fairy_Max5.0("Xboard Engine"), you have to write in the terminal.
 
     xboard -fcp "make run" -scp "fairymax" -secondInitString "new\nrandom\nsd 2\n" -tc 5 -inc 2 -autoCallFlag true -mg 10 -sgf partide.txt -reuseFirst false
+### About the project.
+I worked on this project for less than week
+
+##### Board
+  The board is like an 8 * 8 matrix, each piece is a separate object
+  In start of the game all peices 
