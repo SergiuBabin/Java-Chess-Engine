@@ -15,12 +15,13 @@ Java chess engine that accept commands from XBoard and can communicate with it. 
 ### How to play
 For run this engine you need download Xboard 4.8 or newer
 #### Drag and Drop
-
 * Drag the piece you want to move.
 * Drop the dragged piece on the target and if the move is legal piece will move.
-
+#### Click edition
+* Click on the piece you want to move.
+* Click on the destination square and if the move is legal the piece will stack below the target.
 #### Download:
 Linux
    
     sudo apt-get install xboard
-            
+          
